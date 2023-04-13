@@ -20,10 +20,10 @@ form.addEventListener('submit', function(event) {
   });
   const experiencia = document.querySelector('#exp').value;
 
-  resultado.innerHTML = `Nome: ${nome} ${sobrenome}<br>
-                          E-mail: ${email}<br>
-                          Lado da aplicação: ${lado}<br>
-                          Senioridade: ${senioridade}<br>
-                          Tecnologias: ${tecnologias.join(', ')}<br>
-                          Experiência: ${experiencia}`;
+  resultado.innerHTML = `<strong>Nome: </strong> ${nome} ${sobrenome}<br>
+                            <strong>E-mail: </strong> ${email}<br>
+                            <strong>Lado da aplicação: </strong> ${lado}<br>
+                            <strong>Senioridade: </strong>${senioridade}<br>
+                            <strong>Tecnologias: </strong>${tecnologias.join(', ')}<br>
+                            <strong>Experiência: </strong>${experiencia}`;
 });
